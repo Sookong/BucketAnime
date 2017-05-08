@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_anime_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/pink" />
+
+        <TextView
+            android:id="@+id/tv_play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/shape_2radius_black50_trans"
+            android:drawableLeft="@drawable/ic_play_arrow_white_24dp"
+            android:gravity="center_vertical"
+            android:text="999" />
+
+        <TextView
+            android:id="@+id/tv_follow_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/shape_2radius_black50_trans"
+            android:drawableLeft="@drawable/like_white"
+            android:gravity="center_vertical"
+            android:text="追番999" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_anime_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="hahaha wo diao zha tian" />
+
+    <TextView
+        android:id="@+id/tv_anime_look_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

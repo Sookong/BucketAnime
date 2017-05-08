@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="comment_name_textSize">10dp</dimen>
+    <dimen name="comment_time_textSize">10dp</dimen>
+    <dimen name="comment_content_textSize">10dp</dimen>
+    <dimen name="comment_like_textSize">10dp</dimen>
+
+
+
+</resources>

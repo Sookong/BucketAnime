@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="5dp"
+
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="@color/red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="番剧简介" />
+
+        <TextView
+            android:id="@+id/tv_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="展开简介"
+            android:textColor="#00b2ff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="我们知道使用Fresco加载并显示一张图片，需要指定SimpleDraweeView的宽高或者指定其中一个值并设置宽高比，可是我真的不知道要显示的图片有多大，该显示多大？可以帮我搞定吗？答案是肯定的。"
+        android:textColor="@color/grey" />
+</LinearLayout>

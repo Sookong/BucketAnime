@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:background="#c2f1f1f1"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rdgrp_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rdbtn_order_moren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:text="默认"
+            android:textColor="@drawable/selector_radio_button_text" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_order_zhuifan"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:text="追番"
+            android:textColor="@drawable/selector_radio_button_text" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_order_name"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:text="名称"
+            android:textColor="@drawable/selector_radio_button_text" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_order_time"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:text="日期"
+            android:textColor="@drawable/selector_radio_button_text" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

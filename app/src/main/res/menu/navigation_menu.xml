@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_nav_home"
+        android:icon="@drawable/ic_network_cell_white_24dp"
+        android:title="首页" />
+    <group
+        android:menuCategory="container">
+        <item
+            android:id="@+id/item_nav_follow"
+            android:title="在追番剧" />
+        <item
+            android:id="@+id/item_nav_collection"
+            android:icon="@drawable/ic_network_cell_white_24dp"
+            android:title="收藏视频" />
+        <item
+            android:id="@+id/item_nav_history"
+            android:icon="@drawable/ic_network_cell_white_24dp"
+            android:title="观看记录" />
+    </group>
+    <item
+        android:id="@+id/item_nav_setting"
+        android:icon="@drawable/ic_network_cell_white_24dp"
+        android:title="设置与帮助" />
+
+
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="锁孔"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tv_reply_time"
+            android:text="2017-12-12 0:0:0"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_reply_content"
+        android:text="hahahahahahahahahah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+</LinearLayout>

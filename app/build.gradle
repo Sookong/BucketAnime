@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.tanwuyu.ivrtym.bucketanime"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':autorollpage')
+    compile project(':flowlayout')
+    compile files('libs/pldroid-player-1.5.1.jar')
+    compile files('libs/ShareSDK-Wechat-2.8.2.jar')
+    compile files('libs/MobCommons-2017.0322.0931.jar')
+    compile files('libs/MobTools-2017.0322.0931.jar')
+    compile files('libs/ShareSDK-Core-2.8.2.jar')
+    compile files('libs/ShareSDK-Douban-2.8.2.jar')
+    compile files('libs/ShareSDK-Email-2.8.2.jar')
+    compile files('libs/ShareSDK-Facebook-2.8.2.jar')
+    compile files('libs/ShareSDK-QQ-2.8.2.jar')
+    compile files('libs/ShareSDK-QZone-2.8.2.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.8.2.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.8.2.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.8.2.jar')
+    compile files('libs/ShareSDK-Twitter-2.8.2.jar')
+    compile files('libs/ShareSDK-Wechat-2.8.2.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.8.2.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.8.2.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.8.2.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.8.2.jar')
+    compile project(':containerwithstate')
+    compile files('libs/Bmob_Push_V1.0.0beta_20160627.jar')
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:retrofit-converters:2.2.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.6'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.android.support:support-v4:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:cardview-v7:25.1.0'
+    compile 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    compile 'com.facebook.fresco:fresco:1.2.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    compile 'com.tencent.bugly:crashreport:2.5.0'
+    compile 'com.android.support:support-vector-drawable:25.3.0'
+    testCompile 'junit:junit:4.12'
+    compile project(':seibertronrecyclerview')
+}

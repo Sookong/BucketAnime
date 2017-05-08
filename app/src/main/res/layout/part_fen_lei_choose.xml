@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/part_fen_lei_choose"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="56dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rdgrp_fen_lei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="全部" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_rexue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="热血" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_paomian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="泡面" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_gaoxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="搞笑" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_qingchun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="青春" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_jizhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="机战" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_youxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="游戏" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_zhiyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="治愈" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_luoli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="萝莉" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_lizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="励志" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_lianai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="恋爱" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_yinv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="乙女" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_hougong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="后宫" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_maoxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="冒险" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_qinggai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="轻改" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_fen_lei_roufan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="肉番" />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rdgrp_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="全部" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_2017"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="2017" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_2016"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="2016" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_2015"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="2015" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_2014"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="2014" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_2013"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="2013" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_2012"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="2012" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_2011"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="2011" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_2010"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="2010" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_time_early"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="更早" />
+
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rdgrp_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbtn_area_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="全部" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_area_japan"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="日本" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_area_west"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="欧美" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_area_china"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="国产" />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rdgrp_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbtn_state_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="全部" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_state_end"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="已完结" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_state_showing"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="连载中" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_state_future"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:padding="2dp"
+                android:text="即将上映" />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+</LinearLayout>

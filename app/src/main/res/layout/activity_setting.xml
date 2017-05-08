@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#d9d8d8"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        app:contentInsetStart="0dp"
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_key_back"
+                android:src="@drawable/ic_keyboard_arrow_left_grey_900_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center_vertical"
+                android:text="设置"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="播放设置" />
+
+                <LinearLayout
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_decode_setting"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="解码设置" />
+                    <TextView
+                        android:id="@+id/tv_current_decode"
+                        android:gravity="center_vertical"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_purple_500_24dp"
+                        android:text="软件解码"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_allow_mobile_net_play"
+                        android:gravity="center_vertical"
+                        android:text="允许在移动网络下播放"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <Switch
+                        android:id="@+id/switch_allow_mobile_net_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="消息设置"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_allow_push_msg"
+                        android:gravity="center_vertical"
+                        android:text="接收推送消息"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <Switch
+                        android:id="@+id/switch_allow_push_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="缓存设置"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_clear_play_record"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_purple_500_24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="清空播放记录"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/tv_clear_input_record"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_purple_500_24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="清空搜索记录"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/tv_clear_img_cache"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_purple_500_24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="清空图片缓存"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="其他设置"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:text="恢复默认设置"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_purple_500_24dp"
+                    android:id="@+id/tv_apply_default_setting"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_check_update"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="检测更新" />
+                    <TextView
+                        android:id="@+id/tv_current_version"
+                        android:gravity="center_vertical"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_purple_500_24dp"
+                        android:text="当前版本:1.0.0beta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:text="关于作者"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_purple_500_24dp"
+                    android:id="@+id/tv_about_us"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

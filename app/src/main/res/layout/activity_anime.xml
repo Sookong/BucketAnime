@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <FrameLayout
+                android:id="@+id/frame_head_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_head_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/lightpink"
+                    fresco:viewAspectRatio="1.0" />
+
+                <LinearLayout
+                    android:id="@+id/container_anime_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tv_anime_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="海军罪案调查处---方探长传奇"
+                        android:textColor="@color/whitesmoke"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/frame_head_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="150dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/container_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_anime_img"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:background="@color/pink" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_update_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="连载中|每周五更新" />
+
+                        <TextView
+                            android:id="@+id/tv_anime_video_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="更新至21集" />
+
+                        <TextView
+                            android:id="@+id/tv_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地区:日本" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_play_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="播放:12万" />
+
+                            <TextView
+                                android:id="@+id/tv_follow_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="追番:999" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_reply_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:drawableStart="@drawable/ic_collections_grey_900_24dp"
+                        android:gravity="center"
+                        android:text="1299播放" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_follow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableStart="@drawable/like_disable"
+                        android:gravity="center"
+                        android:text="追番" />
+
+                    <TextView
+                        android:id="@+id/tv_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableStart="@drawable/share_gray"
+                        android:gravity="center"
+                        android:text="分享" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_head_cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/container_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|start"
+                            android:gravity="center"
+                            android:text="简介" />
+
+                        <TextView
+                            android:id="@+id/tv_more_introduce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_green_500_24dp"
+                            android:gravity="center"
+                            android:text="更多" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_simple_introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="hahahahahha" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_videos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|start"
+                            android:text="选集" />
+
+                        <TextView
+                            android:id="@+id/tv_play_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:text="上次看到21集" />
+
+                    </FrameLayout>
+
+                    <com.tanwuyu.ivrtym.seibertronrecyclerview.SeibertronRecyclerView
+                        android:id="@+id/rcv_videos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:minHeight="50dp" />
+
+                </LinearLayout>
+
+                <!--相关推荐-->
+                <LinearLayout
+                    android:id="@+id/container_tui_jian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:text="相关推荐" />
+
+                    <com.tanwuyu.ivrtym.seibertronrecyclerview.SeibertronRecyclerView
+                        android:id="@+id/rcv_tui_jian"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:minHeight="50dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="评论"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tool_bar"
+                app:contentInsetStart="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_vertical|start"
+                        android:src="@drawable/ic_keyboard_arrow_left_grey_900_24dp"
+                        android:id="@+id/iv_key_back"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="海军罪案调查处"
+                        android:id="@+id/tv_toolbar_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/container_quick_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="8dp"
+            app:layout_scrollFlags="enterAlways">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_user_head_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_quick_reply"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gray"
+                android:gravity="center_vertical"
+                android:hint="快来吐槽吧~~" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--    <com.tanwuyu.ivrtym.bucketanime.widget.AutoLoadMoreRecyclerView
+            android:id="@+id/rcv_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+    <com.tanwuyu.ivrtym.seibertronrecyclerview.SeibertronRecyclerView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/rcv_reply"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:padding="10dp"
+        android:text="热门评论"
+        android:id="@+id/tv_reply_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:background="@color/pink"
+            android:id="@+id/sdv_user_head_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="谭伍钰"
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@+id/tv_user_name"
+                    android:text="10-15 19:45"
+                    android:id="@+id/tv_reply_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/tv_do_reply"
+                    android:text="回复"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:text="非常不错,我喜欢"
+                android:id="@+id/tv_reply_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:id="@+id/container_child_reply"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+            </LinearLayout>
+
+            <TextView
+                android:gravity="center"
+                android:text="查看更多>"
+                android:id="@+id/tv_more_reply"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

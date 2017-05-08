@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BucketAnime.iml" filepath="$PROJECT_DIR$/BucketAnime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autorollpage/autorollpage.iml" filepath="$PROJECT_DIR$/autorollpage/autorollpage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/containerwithstate/containerwithstate.iml" filepath="$PROJECT_DIR$/containerwithstate/containerwithstate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/danmumaker/danmumaker.iml" filepath="$PROJECT_DIR$/danmumaker/danmumaker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowlayout/flowlayout.iml" filepath="$PROJECT_DIR$/flowlayout/flowlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seibertronrecyclerview/seibertronrecyclerview.iml" filepath="$PROJECT_DIR$/seibertronrecyclerview/seibertronrecyclerview.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tanwuyu.ivrtym.rollpageview.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <com.tanwuyu.ivrtym.rollpageview.RollPageView
+        android:layout_below="@+id/tv_hello"
+        android:id="@+id/roll_page_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.tanwuyu.ivrtym.rollpageview.RollPageView>
+</RelativeLayout>

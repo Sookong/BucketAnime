@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_tuijian_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/iv_title_left"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tv_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门推荐" />
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:background="@drawable/shape_5radiu_dark_transation"
+        android:textColor="@color/gray"
+        android:id="@+id/tv_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="换一波推荐" />
+
+    <ImageView
+        android:id="@+id/iv_title_right"
+        android:layout_width="20dp"
+        android:layout_height="20dp"  />
+
+
+</LinearLayout>
